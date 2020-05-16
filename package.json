@@ -1,0 +1,26 @@
+{
+  "name": "nigma",
+  "version": "1.0.0",
+  "description": "backend for quizapp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifere/nigma-backend.git"
+  },
+  "author": "Immanuel Ifere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifere/nigma-backend/issues"
+  },
+  "homepage": "https://github.com/ifere/nigma-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "morgan": "^1.10.0"
+  }
+}
