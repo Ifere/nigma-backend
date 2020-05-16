@@ -2,7 +2,7 @@ import QuestionRepo from "./repo";
 
 const repo = new QuestionRepo();
 
-class QuestionUsecase {
+export default class QuestionUsecase {
 
     CreateQuestion (user) {
         try {

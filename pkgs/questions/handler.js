@@ -6,7 +6,7 @@ const usecase = new QuestionUsecase();
 
 export default class QuestionHandler {
 
-    CreateQuestion = (req, res) => {
+    CreateQuestion (req, res) {
         try {
             const user = req.body;
             return res.json({
@@ -26,7 +26,7 @@ export default class QuestionHandler {
 
     }
 
-    FetchQuestions = (req, res) => {
+    FetchQuestions (req, res) {
         try {
             const filter = req.query;
             return res.json({
@@ -45,7 +45,7 @@ export default class QuestionHandler {
         }
     }
 
-    GetQuestion = (req, res) => {
+    GetQuestion (req, res) {
         try {
             const userId = req.body.params.userId;
             return res.json({
@@ -64,7 +64,7 @@ export default class QuestionHandler {
         }
     }
 
-    UpdateQuestion = (req, res) => {
+    UpdateQuestion (req, res) {
         try {
             const userId = req.body.params.userId;
             const update = req.body
@@ -82,7 +82,7 @@ export default class QuestionHandler {
         }
     }
 
-    DeleteQuestion = (req, res) => {
+    DeleteQuestion (req, res) {
         try {
             const userId = req.body.params.userId;
             return res.json({

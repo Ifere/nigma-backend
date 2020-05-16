@@ -1,4 +1,4 @@
-import Question from "../../models";
+import Question from "../../models/question_model";
 
 
 export default class QuestionRepo{

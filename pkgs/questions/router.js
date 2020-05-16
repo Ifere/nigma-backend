@@ -2,7 +2,7 @@ import express from "express";
 import QuestionHandler from "../questions/handler";
 const api = express.Router({mergeParams: true});
 
-export default  QuestionRouter = function () {
+export default function QuestionRouter () {
     const handler = new QuestionHandler();
 
     api.route("/questions")

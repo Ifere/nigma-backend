@@ -1,6 +1,9 @@
+import cors from "cors";
 import express from "express";
+import fs from "fs";
 import logger from "morgan";
-import mongo from "./config/db";
+import path from "path";
+import { connectDB } from "./config/db";
 const logStream = fs.createWriteStream(path.join(__dirname, 'request.log'), { flags: "a" });
 
 
@@ -11,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // connects to mongodb instance
-mongo();
+connectDB();
 
 // register question service
 import Handle from "./pkgs/questions/router"
