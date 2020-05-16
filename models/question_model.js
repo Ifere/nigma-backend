@@ -5,6 +5,10 @@ const QuestionSchema = new Schema({
         type: String,
         default: "",
     },
+    Category: {
+        type: String,
+        default: ""
+    },
     Options: {
         type: Array,
         default: []
